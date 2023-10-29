@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="wrapper">
+            <div class="card-wrapper">
+                <div >
+                    <img src="profile-pic.png" alt="userImage" width="150px" height="150px">
+                </div>
+                <div class="userName">Chandra Subhashini</div>
+                <div class="designation">Student</div>
+                <div class="btn-grp">
+                    <button onclick="openModel()" class="btn-card btn-share">
+                        <i class="fa-solid fa-share"></i> 
+                        <div>Share my profile</div>
+                    </button>
+                    <button class="btn-card btn-follow">Follow me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model code  -->
+    <div class="modal">
+        <div class="modal-header">
+          <h1>Share My Profile</h1>
+            <div class="cross">
+                <i onclick="closeModel()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+        <h3>Share this via</h3>
+        <div class="icon-div">
+            <a href="#" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="icon" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="icon" id="telegram"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div class="overlay" onclick="closeModel()"></div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/de81581f4e.js" crossorigin="anonymous"></script>
+</body>
+</html>
